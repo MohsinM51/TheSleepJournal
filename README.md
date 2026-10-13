@@ -56,12 +56,19 @@ average sleep/wake times. The sun/moon button flips the theme.
 
 <p align="center">
   <img src="docs/screenshots/charts-dark.png" width="260" alt="Sleep Health and Sleep Time charts, dark mode" />
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/charts-toggled-dark.png" width="260" alt="Sleep Duration and Wake Up Time charts, dark mode" />
 </p>
 
-**Sleep Health** (1–5) and **Sleep Time** over the selected window, with the
-sleep goal as a dashed reference line. The icon in each card's corner toggles to
-the companion graph (Sleep Duration / Wake Up Time). No chart library — every
-chart is a `CustomPainter`, so theming and animation are fully under control.
+Each chart card has a toggle in its corner that swaps between a pair of graphs:
+
+| Card | Default | Toggled |
+|---|---|---|
+| Duration / Health | **Sleep Duration**, with the recommended 7–9 h band shaded | **Sleep Health** (1–5) |
+| Bed / Wake | **Sleep Time**, with the goal bedtime dashed | **Wake Up Time**, with the goal wake time dashed |
+
+No chart library — every chart is a `CustomPainter`, so theming and animation
+are fully under control.
 
 ### Calendar — alignment timeline & Sleep Health heatmap
 
