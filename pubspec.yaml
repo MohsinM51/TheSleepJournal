@@ -1,0 +1,50 @@
+name: sleeptrack
+description: A personal, wake-date based sleep tracker.
+publish_to: 'none'
+version: 3.4.0+14
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  shared_preferences: ^2.3.2
+  provider: ^6.1.2
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Satoshi
+      fonts:
+        - asset: assets/fonts/Satoshi-Light.otf
+          weight: 300
+        - asset: assets/fonts/Satoshi-Regular.otf
+          weight: 400
+        - asset: assets/fonts/Satoshi-Medium.otf
+          weight: 500
+        - asset: assets/fonts/Satoshi-Bold.otf
+          weight: 700
+    - family: Oswald
+      fonts:
+        - asset: assets/fonts/Oswald-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Oswald-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Oswald-Medium.ttf
+          weight: 500
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/icon_legacy.png"
+  adaptive_icon_background: "#F1EEE8"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
+  min_sdk_android: 21
